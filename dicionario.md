@@ -5,7 +5,9 @@
 * **neofetch**
   É um comando usado para saber tudo sobre a maquina e os softwares instalados nela
 
-## Comandos shell script (terminal)
+## Comandos de terminal
+
+* **mkdir** = cria um diretório na path.
 
 * **>** = indica dentro de algo
 
