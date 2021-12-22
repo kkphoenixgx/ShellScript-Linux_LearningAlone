@@ -1,0 +1,17 @@
+@echo off
+
+set vbsfile=%temp%\som.vbs
+
+set "file=D:\LinuxShellScript\Bat\Projetos\Initializing\Audios\rotina.mp3"
+(echo set sound = Createobject("wmplayer.ocx.7"^))
+echo sound.URL = "%file%"
+echo.sound.controls.play
+
+echo do while sound.currentmedia.duration = 0
+echo wscript.sleep 100
+echo loop
+
+echo wscript.sleep(int(sound.currentmedia.duration^)+1^)*1000)>%vbsfile%
+start %vbsfile%
+
+pause
